@@ -1,0 +1,56 @@
+[
+  {
+    "id": 1,
+    "name": "Pink Headphones Wireless",
+    "price": 150,
+    "img": "https://img.freepik.com/free-photo/pink-headphones-wireless-digital-device_53876-96804.jpg?w=996&t=st=1648225719~exp=1648226319~hmac=f66bfbb2e1ad464b11639d77b24f34bdfa8e0d66a7b0da1d557d05ee93456473"
+  },
+  {
+    "id": 2,
+    "name": "Vintage Colored headphones",
+    "price": 150,
+    "img": "https://img.freepik.com/free-photo/colored-headphones-colored-vintage-background_121234-174.jpg?w=996"
+  },
+  {
+    "id": 3,
+    "name": "Blue Headphone",
+    "price": 195,
+    "img": "https://img.freepik.com/free-psd/headphone-3d-render-illustration-isolated_155582-4691.jpg?w=740"
+  },
+  {
+    "id": 4,
+    "name": "Red Headphone",
+    "price": 210,
+    "img": "https://img.freepik.com/free-psd/headphone-mockup_187299-1162.jpg?w=740"
+  },
+  {
+    "id": 5,
+    "name": "Dark Black Headphones",
+    "price": 240,
+    "img": "https://img.freepik.com/free-photo/headphones-dark-black-background_68747-106.jpg?w=740"
+  },
+  {
+    "id": 6,
+    "name": "Black Wireless Headphone",
+    "price": 190,
+    "img": "https://img.freepik.com/free-photo/black-wireless-headphone-isolated-beautiful-pastel-color_47469-462.jpg?w=740"
+  },
+  {
+    "id": 7,
+    "name": "Realistic Wireless Earphones",
+    "price": 120,
+    "img": "https://img.freepik.com/free-vector/realistic-wireless-earphones-illustration_1284-20763.jpg?t=st=1648227460~exp=1648228060~hmac=d0b7f5b31dae4aae4ffb3649f083c951e9258704a7a0c497211951966aeb092c&w=740"
+  },
+  {
+    "id": 8,
+    "name": "Paper Craft Headphones",
+    "price": 180,
+    "img": "https://img.freepik.com/free-photo/paper-craft-art-headphones_53876-145021.jpg?w=740&t=st=1648228232~exp=1648228832~hmac=52c25040b68bbd76fc3d268d446fdfe8b094da6e2d2c1b38de3f6a27facdccba"
+  },
+  {
+    "id": 9,
+    "name": "Creative Headphone Mockup",
+    "price": 275,
+    "img": "https://img.freepik.com/free-psd/creative-headphone-mockup_1310-744.jpg?w=996"
+  }
+]
