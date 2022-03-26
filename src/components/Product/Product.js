@@ -8,7 +8,7 @@ const Product = (props) => {
             <img className='img-fluid' src={img} alt="" />
             <p>Name: {name}</p>
             <p>Price:$ {price}</p>
-            <button>Add to Cart</button>
+            <button onClick={() => props.selectProduct(props.product)}>Add to Cart</button>
         </div>
     );
 };
