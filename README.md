@@ -1,4 +1,5 @@
-# Getting Started with Create React App
+# Headphone Hub
+This project's live site deployed at [Headphone Hub](https://cosmic-scone-9a611c.netlify.app/).
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
