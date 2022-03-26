@@ -5,6 +5,7 @@ import Product from '../Product/Product';
 const Shop = (props) => {
     const [products, setProducts] = useState([])
     const [cart, setCart] = useState([])
+    const [item, setItem] = useState([])
 
     useEffect(() =>
         fetch('products.json')
@@ -16,8 +17,22 @@ const Shop = (props) => {
         const newCart = [...cart, product]
         setCart(newCart)
     }
+    let selectedItem = [];
+    let selectOneItem = []
+
+    for (const product of cart) {
+
+        selectedItem = [...selectedItem, product.name]
+    }
+
+    const selectOneForMe = () => {
+        let selectOneItemIndex = Math.floor(Math.random() * selectedItem.length)
+        selectOneItem = selectedItem[selectOneItemIndex]
+        setItem(selectOneItem)
+    }
     const clearCart = () => {
         setCart([])
+        setItem([])
     }
     return (
         <div>
@@ -31,7 +46,7 @@ const Shop = (props) => {
                     </div>
                 </div>
                 <div className="col-md-4">
-                    <Cart cart={cart} clearCart={clearCart}></Cart>
+                    <Cart clearCart={clearCart} selectedItem={selectedItem} item={item} selectOneForMe={selectOneForMe}></Cart>
                 </div>
             </div>
         </div>

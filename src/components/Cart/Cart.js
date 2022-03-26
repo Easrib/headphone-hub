@@ -1,23 +1,6 @@
-import React, { useState } from 'react';
+import React from 'react';
 
-const Cart = ({ cart, clearCart }) => {
-
-    let selectedItem = [];
-
-    for (const product of cart) {
-
-        selectedItem = [...selectedItem, product.name]
-    }
-
-    const [item, setItem] = useState([])
-
-    let selectOneItem = []
-
-    const selectOneForMe = () => {
-        let selectOneItemIndex = Math.floor(Math.random() * selectedItem.length)
-        selectOneItem = selectedItem[selectOneItemIndex]
-        setItem(selectOneItem)
-    }
+const Cart = ({ clearCart, selectedItem, item, selectOneForMe }) => {
 
 
     return (
