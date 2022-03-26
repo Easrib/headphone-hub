@@ -1,6 +1,6 @@
-import React from 'react';
+import React, { useState } from 'react';
 
-const Cart = ({ cart }) => {
+const Cart = ({ cart, clearCart }) => {
 
     let selectedItem = [];
 
@@ -9,9 +9,16 @@ const Cart = ({ cart }) => {
         selectedItem = [...selectedItem, product.name]
     }
 
-    // const selectOne = (selectedItem) => {
-    //     return selectedItem[Math.floor(Math.random() * selectedItem.length)]
-    // }
+    const [item, setItem] = useState([])
+
+    let selectOneItem = []
+
+    const selectOneForMe = () => {
+        let selectOneItemIndex = Math.floor(Math.random() * selectedItem.length)
+        selectOneItem = selectedItem[selectOneItemIndex]
+        setItem(selectOneItem)
+    }
+
 
     return (
         <div>
@@ -21,9 +28,9 @@ const Cart = ({ cart }) => {
                     selectedItem.map(item => <h3>{item}</h3>)
                 }
             </div>
-            <p><button>Select One for Me</button></p>
-            <p></p>
-            <p><button>Clear Cart</button></p>
+            <p><button onClick={selectOneForMe}>Select One for Me</button></p>
+            <h2>{item}</h2>
+            <p><button onClick={clearCart}>Clear Cart</button></p>
         </div >
     );
 };

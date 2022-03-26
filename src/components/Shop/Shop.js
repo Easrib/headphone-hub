@@ -16,6 +16,9 @@ const Shop = (props) => {
         const newCart = [...cart, product]
         setCart(newCart)
     }
+    const clearCart = () => {
+        setCart([])
+    }
     return (
         <div>
             <div className="row">
@@ -23,12 +26,12 @@ const Shop = (props) => {
                     <div className="row">
                         {
                             products.map(product => <Product key={product.id} product={product}
-                            selectProduct={selectProduct}></Product>)
+                                selectProduct={selectProduct}></Product>)
                         }
                     </div>
                 </div>
                 <div className="col-md-4">
-                    <Cart cart={cart}></Cart>
+                    <Cart cart={cart} clearCart={clearCart}></Cart>
                 </div>
             </div>
         </div>
