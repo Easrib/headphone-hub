@@ -2,7 +2,7 @@ import React from 'react';
 
 const Question = () => {
     return (
-        <div className='mt-4 container'>
+        <div className='mt-2 container bg-light'>
             <h1>Question and Answer</h1>
             <div className="text-start p-4">
                 <h2>What is the difference between State and Props</h2>

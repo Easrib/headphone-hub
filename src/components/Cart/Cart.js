@@ -21,16 +21,16 @@ const Cart = ({ cart, clearCart }) => {
 
 
     return (
-        <div>
+        <div className='bg-info p-2'>
             <h1>Selected Headphone</h1>
             <div>
                 {
                     selectedItem.map(item => <h3>{item}</h3>)
                 }
             </div>
-            <p><button onClick={selectOneForMe}>Select One for Me</button></p>
+            <p><button className='btn btn-primary' onClick={selectOneForMe}>Select One for Me</button></p>
             <h2>{item}</h2>
-            <p><button onClick={clearCart}>Clear Cart</button></p>
+            <p><button className='btn btn-primary' onClick={clearCart}>Clear Cart</button></p>
         </div >
     );
 };
